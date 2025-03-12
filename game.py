@@ -14,12 +14,12 @@ def lcm(a, b):
 def lcm_three(a, b, c):
     return lcm(lcm(a, b), c)
 
+def generate_unique_numbers(count=3, start=1, end=30):
+    return random.sample(range(start, end + 1), count)
 
 def game(name):
     while True:
-        a=random.randint(1, 30)
-        b=random.randint(1, 30)
-        c=random.randint(1, 30)
+        a, b, c = generate_unique_numbers()
         print(f'Question: {a}, {b}, {c}')
         correct = lcm_three(a,b,c)
         answer=input('Your answer:' )
