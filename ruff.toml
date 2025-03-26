@@ -1,0 +1,21 @@
+[tool.ruff]
+
+severity = "warn"
+
+exclude = [
+    "tests/*",  # Игнорировать папку с тестами
+    "__pycache__"  # Игнорировать кеши Python
+]
+
+extend-ignore = ["E501", "W391"]
+
+select = [
+    "F",
+    "E",
+    "W"
+]
+
+
+line-length = 88
+
+target-version = "py310"
