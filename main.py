@@ -3,7 +3,6 @@ from games.progression import play_progression
 from games.nok import play_nok
 
 def main():
-    # Приветствие и выбор игры
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!\n")
@@ -18,10 +17,10 @@ def main():
 
         if choice == "1":
             print("\nStarting the Geometric Progression game...")
-            play_game(play_progression)
+            play_game(play_progression, name)
         elif choice == "2":
             print("\nStarting the Smallest Common Multiple (LCM) game...")
-            play_game(play_nok)
+            play_game(play_nok, name)
         elif choice == "0":
             print("Goodbye! See you next time!")
             break
