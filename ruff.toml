@@ -3,8 +3,8 @@
 severity = "warn"
 
 exclude = [
-    "tests/*",  # Игнорировать папку с тестами
-    "__pycache__"  # Игнорировать кеши Python
+    "tests/*",
+    "__pycache__"
 ]
 
 extend-ignore = ["E501", "W391"]
